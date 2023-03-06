@@ -1,14 +1,15 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Mi página web</title>
+	<title>Título de la página</title>
 </head>
 <body>
-	<h1>Hola Mundo</h1>
-    <h2>Soy el mejor</h2>
-	<h3>Hola de nuevo </h3>
-	<p>"Como el agua"</p>
-	<3>Al lio que se va el tio</3>
-	</body>
+	<h1>Encabezado principal</h1>
+	<p>Este es un párrafo de texto.</p>
+	<ul>
+		<li>Elemento de lista 1</li>
+		<li>Elemento de lista 2</li>
+		<li>Elemento de lista 3</li>
+	</ul>
+</body>
 </html>
