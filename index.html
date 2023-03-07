@@ -1,20 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>APPCC</title>
+	
+	<link rel="icon" href="img/favicon16x16.ico" sizes="16x16">
+	<link rel="icon" href="img/favicon32x32.ico" sizes="32x32">
+	<link rel="icon" href="img/favicon64x64.ico" sizes="64x64">
 </head>
 <body>
-	<form>
+	<table style="border: 1px solid black;">
+		<tr>
+			<th>Precio</th>
+			<th>Producto</th>
+		</tr>
+			<tr>
+				<td>Hola bits</td>
+				<td>Gratis</td>
+			</tr>
+			<tr>
+				<td>El amigo </td>
+				<td>la amiga</td>	
+			</tr>
+			<tr>
+				<td>El amigo de juan es tonto </td>
+				<td>Este amigo es mas chugo que el otro</td>	
+			</tr>
+			</table>
+
+
+
+	<!--esto es una lista no ordenada-->
+	<ul>
+	<li>elemento1</li>
+	<li>elemento2</li>
+	<li>elemento3</li>
+	<li>elemento4</li>
+	</ul>
+	<!--esto es una lista ORDENADA-->
+	<ol>
+		<li value="50">elemento1</li>
+		<li>elemento2</li>
+		<li>elemento3</li>
+		<li>elemento4</li>
+		<li>
+			<ol>
+				<li style="list-style-type: lower-alpha;">elemento1</li>
+				<li style="list-style-type: lower-alpha;">elemento2</li>
+				<li style="list-style-type: lower-alpha;">elemento3</li>
+				<li style="list-style-type: lower-alpha;">elemento4</li></ol>
+		</li>
+		</ol>
+
+
+	<form action="/formulario" method="POST">
 		<label for="nombre">Nombre:</label>
-		<input type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre"/>
+		<input value="chanchito" type="text" id="nombre" name="nombre" placeholder="Introduzca su nombre"/>
 		<br><br>
 		<label for="apellido">Apellido:</label>
-		<input type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido"/>
+		<input value="feliz" type="text" id="apellido" name="apellido" placeholder="Introduzca su apellido"/>
 		<br><br>
 		<label for="comentario">Comentario:</label>
 		<br>
-		<textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Deja tu comentario"></textarea>
-
+		<textarea  cols="50" rows="10" id="comentario" name="comentario" placeholder="Deja tu comentario">Este es un valor por defecto...</textarea>
+		<br>
+		<!--Estos tipos de botones pueden contener otras etuquetas como "imágenes" -->
+		<button style="background-color: brown; border: none; cursor: pointer;" onmouseover="this.style.backgroundColor='orange'" onmouseout="this.style.backgroundColor='brown'" type="button"><img src="img/logotipo1.png"></button><!--a este se le da funcionalidad don JS o phyton -->
+		<button type="reset">Tipo reset</button>  <!--Borra el formulario -->
+		<button type="submit">Tipo submit</button> <!--envía a la ruta que le hemos indicado en FORM action -->
+		<input type="submit" value="Enviar formulario">
 	</form>
 	<h1>"Contenido de nuestra web"</h1>
 	<h2>"Contenido de nuestra web"</h2>
